@@ -1,9 +1,9 @@
 <?php
 
-$serverName = "sql4.freesqldatabase.com";
-$dBUsername = "sql4480869";
-$dBPassword = "vr2idb9srd";
-$dBName = "sql4480869";
+$serverName = "localhost";
+$dBUsername = "root";
+$dBPassword = "";
+$dBName = "studyRight";
 
 
 $conn = mysqli_connect($serverName,$dBUsername ,$dBPassword,$dBName );
