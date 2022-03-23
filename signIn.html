@@ -1,0 +1,67 @@
+
+
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>sign in </h1>
+    
+
+    <form action="includs/signin.inc.php" method="post" class="form">
+
+        <input type="text" name="name" placeholder="name"> <br>
+        <input type="text" name="email" placeholder="email"> <br>
+        <input type="text" name="uid" placeholder="user name"> <br>
+        <input type="password" name="pwd" placeholder="password"> <br>
+        <input type="password" name="pwdRepeat" placeholder="password repeat"> <br>
+        <button type="submit" name="submit"> sign up</button>
+
+
+        
+    </form>
+
+
+
+<?php
+ if(isset($_GET["error"])){
+
+    if($_GET["error"] == "somthingrowng"){
+      echo  "<p> somthing wrong try again </p>";
+    }
+
+
+    else if ($_GET["error"] == "none"){
+        echo  "<p> you have singed in </p>";
+      }
+      
+      else if ($_GET["error"] == "emptyinput"){
+        echo  "<p>  you have  empty input </p>";
+      }
+      
+      else if ($_GET["error"] == "passworddontmatch"){
+        echo  "<p> password does not match </p>";
+      }
+      
+      else if ($_GET["error"] == "emailexist"){
+        echo  "<p> email is allredy exists </p>";
+      }
+  
+
+}
+?>
+    
+    
+
+</body>
+</html>

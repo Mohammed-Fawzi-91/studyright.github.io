@@ -1,0 +1,76 @@
+html{
+    background-color: rgb(176, 182, 184);
+    display: flex;
+flex-wrap: wrap;
+justify-content: center;
+justify-items: center;
+
+
+
+}
+
+.nav {
+    margin-top: 250px;
+    display: flex;
+    background-color: rgb(231, 108, 6);
+    text-align: center;
+    width:auto;
+    height: 110px;
+    width: 500px;
+    justify-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+
+
+
+}
+.nav a{
+    color: rgb(19, 5, 5);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+    padding: 20px;
+    text-decoration: none;
+
+}
+.form{
+    background-color: brown;
+    width: 500px;
+    height: auto;
+    margin-top: 150px;
+    background-color: rgb(231, 108, 6);
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+    
+}
+.form input, button{
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+   
+
+}
+h1{
+
+    display: flex;
+    background-color: rgb(231, 108, 6);
+    justify-content: center;
+    border-radius: 5px;
+
+
+
+}
+p{
+    display: flex;
+    justify-content: center;
+    color: rgb(211, 12, 12);
+    font-size: 20px;
+
+}
+.didIt{
+    color: green;
+}

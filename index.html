@@ -1,0 +1,77 @@
+
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="nav">
+      
+        <?php
+
+        
+        if (isset($_SESSION["useruid"])){
+
+           echo  "<a href='profile.html'> profile </a>";
+           echo  "<a href='includs/loguot.inc.php'> log out </a>";
+           echo  "<a href='java.html'> java </a>";
+
+        } else{
+
+            echo  "<a href='logIn.html'> logIn </a>";
+            echo  "<a href='signIn.html'> signIn </a>";
+            echo  "<a href='java.html'> java </a>";
+
+
+
+        }
+        ?>
+    </nav>
+
+
+ 
+
+
+
+
+<div>
+
+        <?php
+
+        
+        if (isset($_SESSION["useruid"])){
+
+           echo  "<h1>hello    " .$_SESSION["useruid"]. "</h1>";
+
+        } 
+        ?>
+        
+
+    <?php
+    if(isset($_GET["error"])){
+   
+
+   
+   
+   if ($_GET["error"] == "none"){
+    echo  "<p class = 'didIt'> you did it, try to log in now! </p>";
+}
+         
+    
+     
+   
+   }
+   ?>
+
+</div>
+    
+</body>
+</html>
